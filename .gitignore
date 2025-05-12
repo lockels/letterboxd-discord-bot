@@ -4,5 +4,4 @@ requirements.txt
 utils/quotes.txt
 utils/ratings.json
 utils/servers.json
-
 utils/users.json
