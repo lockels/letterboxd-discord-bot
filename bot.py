@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup as bs
 import requests
 import json
 from pathlib import Path
+import webserver
 
 ## Local imports
 import rating_updates
@@ -122,7 +123,7 @@ async def add_user(interaction: discord.Interaction, letterboxd_handle: str):
     )
 
 
-@bot.tree.command(name="remove")
+@bot.tree.command(name="delete")
 async def remove_user(interaction: discord.Interaction):
     assert interaction.guild is not None
 
@@ -253,4 +254,4 @@ def getimg(url):
 
 if __name__ == "__main__":
     bot.run(BOT_TOKEN)
-    pass
+    webserver.keep_alive()

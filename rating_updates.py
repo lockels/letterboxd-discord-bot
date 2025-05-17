@@ -238,7 +238,4 @@ def sort_by_most_watched(ratings):
     }
 
 
-# if __name__ == "__main__":
-#     update_ratings("lupsa", "644202189144850472")
-
 # :)    :)    :)    :)    :)    :)    :)    :)    :)    :)
