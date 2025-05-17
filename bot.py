@@ -118,6 +118,7 @@ async def add_user(interaction: discord.Interaction, letterboxd_handle: str):
         return
 
     insert_user(servers, interaction.user.name, letterboxd_handle, server_id)
+    await rating_updates.update_ratings(letterboxd_handle, server_id)
     await interaction.response.send_message(
         f"Added {letterboxd_handle} to {user}'s account. You can now use the bot!"
     )
