@@ -1,0 +1,7 @@
+requests
+Flask
+discord
+BeautifulSoup4
+lxml
+python-dotenv
+playwright
