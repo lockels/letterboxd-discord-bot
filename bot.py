@@ -7,13 +7,15 @@ import requests
 import json
 from pathlib import Path
 import webserver
+import os
+from dotenv import load_dotenv
 
 ## Local imports
 import rating_updates
-import api_key
 from servertool import delete_user, insert_user, load_servers, add_server
 
-BOT_TOKEN = api_key.DISCORD_API_KEY
+load_dotenv()
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 general = 775154916465442878
 botGeneral = 1060040818653659170
 bot = commands.Bot(command_prefix="-", intents=discord.Intents.all())
