@@ -1,7 +1,3 @@
 api_key.py
 .env
 __pycache__
-utils/quotes.txt
-utils/ratings.json
-utils/servers.json
-utils/users.json
